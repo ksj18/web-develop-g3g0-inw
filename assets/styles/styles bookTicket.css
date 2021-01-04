@@ -1,0 +1,207 @@
+* {
+    box-sizing: border-box;
+    /* border: solid; */
+}
+
+body {
+    background-color: rgb(179, 228, 191);
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#main-header {
+    height: 100px;
+    width: 85%;
+    background-color: #7c9473;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2em auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    border-radius: 10px;
+}
+
+#main-header #col-1-left {
+   
+    width: 20em;
+    border-right: solid;
+}
+
+#main-header #col-1-middle {
+   
+    width: 60em;
+}
+
+
+#main-header #col-1-right {
+   
+    width: 20em;
+}
+
+.dropbtn {
+    background-color:  #7c9473;
+    color:black;
+    padding: 16px;
+    font-size: 2em;
+    border: none;
+  }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+.dropdown-content a:hover {background-color: #586a51;}
+
+.dropdown:hover .dropdown-content {
+    background-color: #cdd0cb;
+    display: block;
+}
+  
+.dropdown:hover .dropbtn {background-color: #586a51;}
+
+
+#Purchase-Tickets-header {
+    height: 100px;
+    width: 85%;
+    background-color: #94ae8a;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 2em auto;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    border-radius: 10px;
+}
+
+#Purchase-Tickets-header #col-2-middle {
+   
+    width: 30em; 
+}
+
+
+#Purchase-Tickets-form {
+    height: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5em;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #cdd0cb;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    border-radius: 10px;
+    padding: 5%;
+}
+
+#Purchase-Tickets-form #col-3-left {
+   
+    width: 45em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+
+}
+
+#Purchase-Tickets-form #col-3-left #col-3-left-subcolumn1{
+    
+    width: 15em;
+    height: 2em;
+    margin-top: 1em;
+}
+
+#Purchase-Tickets-form #col-3-left #col-3-left-subcolumn2{
+    
+    width: 15em;
+    height: 2em;
+    margin-top: 1em
+}
+
+#Purchase-Tickets-form #additional-info-pane  {
+    text-align: center;
+    width: 25em;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; */
+    margin: 2em auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    border-radius: 10px;
+    padding-top: 2%;
+    height: 15em;
+
+}
+
+
+#Purchase-Tickets-form #additional-info-pane  #col-3-right-subcolumn1{
+    
+    /* width: 15em;
+    height: 2em;
+    margin-top: 1em */
+}
+
+#Purchase-Tickets-form #additional-info-pane  #col-3-right-subcolumn2{
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    padding: 2%;
+    width: 15em;
+    height: 15em;
+    margin-top: 5em
+}
+
+#Purchase-Tickets-form #additional-info-pane  #col-3-right-subcolumn3{
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    padding: 2%;
+    width: 15em;
+    height: 15em;
+    margin-top: 5em
+}
+
+#map {
+    height: 100px;
+    margin: 20em auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+#map #col-4-middle {
+   background-color: #7c9473;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    border-radius: 10px;
+}
+
+#billing {
+    line-height: 1.8;
+}
+
+#billing #address {
+    margin-top: 50px;
+}
+
+#billing #payment {
+    margin-top: 50px;
+}
