@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Jungle Theme Park Purchase tickets</title>
+    <title>Jungle Land Admissions</title>
     <meta charset="UTF-8">
     <meta name="description"
         content="Visit the official website for booking a ticket in Jungle Theme park. Find out more about the Prices, opening hours, how to get here and save by booking your tickets online.">
@@ -21,7 +21,8 @@
 <body style="background-image: url('assets/images/jungle.jpg');">
 
     <!-- The main header of the page with navigation links to the other pages of our Jungle Theme park -->
-    <header>
+
+    <!-- <header>
         <section id="main-header">
             <nav id="col-1-left">
 
@@ -38,10 +39,36 @@
                 </div>
             </nav>
 
-            <h1 id="col-1-middle">Jungle Theme Park</h1>
+            <h1 id="col-1-middle">Jungle Land Park</h1>
             <div id="col-1-right"></div>
         </section>
-    </header>
+    </header> -->
+
+
+    <header>
+            <nav class="navbar">
+                <div class="navbar_container">
+                    <a href="/" id="navbar_logo"> Jungle Land </a>
+            
+                    <div class="navbar_toggle" id="mobile-menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <ul class="navbar_menu">
+                        <li class="navbar_item">
+                            <a href="index.html" class="navbar_links">Home</a>
+                        </li>
+                        <li class="navbar_item">
+                            <a href="bookTicket.html" class="navbar_links">Admission</a>
+                        </li>
+                        <li class="navbar_item">
+                                <a href="404.html" class="navbar_links">Attractions</a>
+                            </li>
+                    </ul>
+                </div>
+            </nav>
+            </header>
 
     <!--
         Main section of this page. The purchase ticket form is left panel, and the right side is an aside element 
@@ -250,23 +277,29 @@
                 <h2 id="direction-header">How to get to us?</h2>
           
             <div id="map-background">
-                    <img id="map-image" src="assets/images/location.png"
-                        alt="An image showing location of our Park. It is located close to Manaus. Follow the road to Novo Airao.">
-
-                    <div>
-                        <h1>Our Address</h1>
-                        <address>1 Nossa Senhora Auxiliadora, Novo Airao, Brazil</address>
-                    </div>
+                    <img id="map-image" src="assets/images/location3.jpg"
+                        alt="An image showing location of our Park. It is located close to Manaus. Follow the road to Novo Airao." width="900" height="650" usemap="#workmap">
+                        <map name="workmap">
+                            <area class="map1" shape="circle" coords="40,100,200" href="#map-address" alt="exact location of Jungle Land">
+                        </map>
+  
  
                 </div>
         </section>
 
 
         <footer>
+                <div>
+                        <h2 id="map-address">Our Address</h1>
+                        <address>1 Nossa Senhora Auxiliadora, Novo Airao, Brazil</address>
+                    </div>
+                    <div>
+                        <h2>Contact Us</h2>
             <address>
-                <a href="mailto:jim@rock.com">email@email</a><br>
-                <a href="tel:+13115552368">(3211) 212-211</a>
+                <a href="mailto:jungleland@rock.com">jungleland@rock.com</a><br>
+                <a href="tel:+1111111111">(3211) 11234231</a>
             </address>
+        </div>
         </footer>
 
 
