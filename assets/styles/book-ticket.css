@@ -1,12 +1,14 @@
 * {
     box-sizing: border-box;
     /* border: solid; */
+    
 }
 
 body {
     background-color: rgb(179, 228, 191);
     font-family: sans-serif;
     text-align: center;
+    margin: 0px;
 }
 
 #main-header {
@@ -21,6 +23,7 @@ body {
     margin: 2em auto;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
     border-radius: 10px;
+    font-family: 'Kaushan Script';
 }
 
 #main-header #col-1-left {
@@ -46,6 +49,7 @@ body {
     padding: 16px;
     font-size: 2em;
     border: none;
+    font-family: 'Kaushan Script';
   }
 
 .dropdown {
@@ -56,11 +60,16 @@ body {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: #7c9473;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
+
+.dropdown-content ul {
+    list-style-type: none;
+    text-align: left
+}
 
 .dropdown-content a {
     color: black;
@@ -72,7 +81,7 @@ body {
 .dropdown-content a:hover {background-color: #586a51;}
 
 .dropdown:hover .dropdown-content {
-    background-color: #cdd0cb;
+    background-color: #7c9473;
     display: block;
 }
   
@@ -81,15 +90,17 @@ body {
 
 #Purchase-Tickets-header {
     height: 100px;
-    width: 85%;
+    width: 82%;
     background-color: #94ae8a;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin: 2em auto;
+    margin-bottom: 10px;
     align-items: center;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
     border-radius: 10px;
+    font-family: 'Kaushan Script';
 }
 
 #Purchase-Tickets-header #col-2-middle {
@@ -99,11 +110,12 @@ body {
 
 
 #Purchase-Tickets-form {
-    height: 1200px;
+    height: 1050px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 5em;
+    align-items: flex-start;
+    margin-top: 10px;
     margin-left: 10%;
     margin-right: 10%;
     background-color: #cdd0cb;
@@ -112,52 +124,61 @@ body {
     padding: 5%;
 }
 
-#Purchase-Tickets-form #col-3-left {
+/* purchase ticket form left colum */
+#col-3-left {
    
     width: 45em;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
     text-align: left;
+    display: flex;
+    justify-content: left;
 
 }
 
-#Purchase-Tickets-form #col-3-left #col-3-left-subcolumn1{
-    
-    width: 15em;
-    height: 2em;
-    margin-top: 1em;
+#booking-details input {
+    width: 200px;
+    height: 36px;
+    border-radius: 10px;
+
 }
 
-#Purchase-Tickets-form #col-3-left #col-3-left-subcolumn2{
-    
-    width: 15em;
-    height: 2em;
-    margin-top: 1em
+#booking-details textarea {
+    width: 300px;
+    height: 36px;
+    border-radius: 10px;
+
 }
 
-#Purchase-Tickets-form #additional-info-pane  {
+#booking-details select{
+    width: 300px;
+    height: 80px;
+    border-radius: 10px;
+}
+
+#billing input{
+    width: 200px;
+    height: 36px;
+    border-radius: 10px;
+    margin-top: 2%;
+
+}
+
+/* aside pane with additional info:prices, opening hours */
+#additional-info-pane  {
     text-align: center;
-    width: 25em;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center; */
-    margin: 2em auto;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
     border-radius: 10px;
     padding-top: 2%;
     height: 15em;
+    font-family: 'Kaushan Script';
 
 }
 
 
 #Purchase-Tickets-form #additional-info-pane  #col-3-right-subcolumn1{
-    
-    /* width: 15em;
-    height: 2em;
-    margin-top: 1em */
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    border-radius: 10px;
 }
+
 
 #Purchase-Tickets-form #additional-info-pane  #col-3-right-subcolumn2{
     border-radius: 10px;
@@ -168,31 +189,62 @@ body {
     margin-top: 5em
 }
 
+
+
 #Purchase-Tickets-form #additional-info-pane  #col-3-right-subcolumn3{
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
     padding: 2%;
     width: 15em;
-    height: 15em;
-    margin-top: 5em
-}
-
-#map {
-    height: 100px;
-    margin: 20em auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    margin-top: 3.5em;
     
 }
 
+table {
+    margin:auto
+}
 
-#map #col-4-middle {
-   background-color: #7c9473;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+#opening-hours-list {
+    list-style-type: none;
+
+}
+
+table {
+    text-align: left;
+}
+
+table h4 {
+    text-align: center;
+}
+ 
+#col-3-right-subcolumn3 ul{
+    list-style-type: none;
+    text-align: left;
+}
+
+
+
+#pay-button {
+    margin: 1em;
+    padding: 0.5em 3em;
+    font-size: 1em;
     border-radius: 10px;
 }
+
+#pay-button:hover, #pay-button:focus {
+  background-color: #a4a7a2
+}
+
+#map {
+    margin: auto;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kaushan Script'
+}
+
 
 #billing {
     line-height: 1.8;
@@ -204,4 +256,49 @@ body {
 
 #billing #payment {
     margin-top: 50px;
+}
+
+#map-image {
+    margin-top: 4em;
+}
+
+#some-div {
+    height: 800px;
+    width: 900px;
+    background-color: #cdd0cb;
+}
+
+#direction-header {
+    height: 100px;
+    width: 82%;
+    background-color: #94ae8a;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 2em auto;
+    margin-bottom: 10px;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    border-radius: 10px;
+    font-family: 'Kaushan Script';
+}
+
+#map-background {
+    background-color: #cdd0cb;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    border-radius: 10px;
+}
+
+footer {
+    height: 300px;
+    width: 100%;
+    background-color: #7c9473;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    border-radius: 10px;
+    font-family: 'Kaushan Script';
 }

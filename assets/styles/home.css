@@ -1,0 +1,295 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kaushan Script', cursive;
+
+}
+
+/*backgrounpicture*/
+body{
+    background-image: url('assets/images/jungle.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+
+
+}
+
+
+
+/* THE WHOLE INTERACTIVE NAV BAR AT THE TOP*/
+.navbar
+{
+    background:#cfdac8;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    padding:none;
+}
+
+.navbar_container
+{
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+
+#navbar_logo
+{
+    background: #7c9473;
+    background-image: linear-gradient(to top, #7c9473, black);
+    background-size: 150%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+
+.navbar_menu
+{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar_item
+{
+    height: 50px;
+}
+
+.navbar_links
+{
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 2rem;
+    height: 100%;
+
+}
+
+
+.navbar_links:hover
+{
+    color: #7c9473;
+    transition: all 0.3s ease;
+}
+
+
+
+/*Media portiion for resizing */
+@media screen and(max-width: 960px)
+{
+    .navbar_container{
+        display: :flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0;
+    }
+    .navbar_menu{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        /*top: -1000px;
+        opacity: 0;*/
+        transition: all 0.5s ease;
+        height: 50vh;
+        z-index: -1;
+        background: #131313;
+    }
+    .navbar_menu.active{
+        background: #131313;
+        top: 100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 99;
+        height: 50vh;
+        font-size: 1.6rem;
+    }
+
+    #navbar_logo{
+        padding-left: 25px;
+    }
+
+    .navbar_toggle.bar{
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: #fff;
+    }
+    .navbar_item{
+        width: 100%;
+    }
+    .navbar_links{
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+    #mobile-menu{
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%,20%);
+    }
+    .navbar_btn{
+        padding-bottom: 2rem;
+    }
+    .button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 80px;
+        margin: 0;
+    }
+    .navbar_toggle .bar{
+        display: block;
+        cursor: pointer;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+
+
+}
+
+#wrapper {
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+
+/*picture of entrance*/
+.entrance{
+
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1rem solid #cdd0cb;
+        float: center;
+
+
+
+    }
+
+
+
+.sidenav{
+        vertical-align: right;
+        display:block;
+        background:none;
+        text-decoration: none;
+        border: 1rem solid #cfdac8;
+
+
+
+
+}
+
+/*side bar links beside main picture */
+.sidenavlink{
+    margin-bottom:1px;
+    padding:20px;
+    display: flex;
+    align-items:right;
+    justify-content:center;
+}
+
+.a_links{
+     color: black;
+    display: flex;
+    align-items: right;
+    justify-content: center;
+    text-decoration: none;
+    height: 4rem;
+}
+
+.a_links:hover{
+    background-color: #7c9473;
+    color: black;
+    font-size: 1rem;
+    padding: 16px 32px;
+    text-decoration: none;
+}
+
+
+
+
+
+.picontainer {
+    position: relative;
+    width: 100%;
+    text-decoration: none;
+}
+
+.rollercoaster{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    width:819px;
+    height:546px;
+    opacity: 100%;
+    backface-visibility: hidden;
+    border: 1rem solid #cdd0cb;
+    text-decoration: none;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  text-decoration: none;
+}
+.picontainer:hover .coaster{
+    opacity: 0.3;
+    text-decoration: none;
+
+}
+.picontainer:hover .middle{
+    opacity: 1;
+    text-decoration: none;
+}
+
+.text a {
+    background-color: #7c9473;
+    color: black;
+    font-size: 1.5rem;
+    padding: 16px 32px;
+    text-decoration: none;
+
+}
