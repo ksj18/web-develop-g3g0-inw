@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Jungle Land Admissions</title>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Visit the official website for booking a ticket in Jungle Theme park. Find out more about the Prices, opening hours, how to get here and save by booking your tickets online.">
+    <meta name="author" content="Krzysztof Janowski">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="refresh" content="600">
+    <meta name="robots" content="index,follow">
+    <meta name="keywords" content="Theme park, rides, fun, kids, children, roller-coaster, waterpark ">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/styles/admission.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+</head>
+
+<body style="background-image: url('assets/images/jungle.jpg');">
+
+    <!-- The main header of the page with navigation links to the other pages of our Jungle Theme park -->
+
+    <header>
+            <nav class="navbar">
+                <div class="navbar_container">
+                    <a href="/" id="navbar_logo"> Jungle Land </a>
+            
+                    <div class="navbar_toggle" id="mobile-menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <ul class="navbar_menu">
+                        <li class="navbar_item">
+                            <a href="index.html" class="navbar_links">Home</a>
+                        </li>
+                        <li class="navbar_item">
+                            <a href="addmissions.html" class="navbar_links">Admission</a>
+                        </li>
+                        <li class="navbar_item">
+                                <a href="attractions.html" class="navbar_links">Attractions</a>
+                            </li>
+                    </ul>
+                </div>
+            </nav>
+            </header>
+
+    <!--
+        Main section of this page. The purchase ticket form is left panel, and the right side is an aside element 
+        with additional infromation. The bottom part of the main section contains a 'How to get here' section
+     -->
+    <main>
+        <div id="Purchase-Tickets-header">
+            <h2 id="col-2-middle">Purchase Tickets</h2>
+        </div>
+
+        <section id="Purchase-Tickets-form">
+            <div id="col-3-left">
+                <section id="booking-details">
+                    <h2>Booking details</h2>
+                    <p>
+                        <!-- <label for="tickets-number">Number of tickets:</label> -->
+                        <input type="number" value="Number of tickets" placeholder="Number of tickets" id="tickets-number"
+                            name="tickets-number" min="1" required />
+                    </p>
+                    <p>
+                        <input type="date" value="" id="reservation-date" placeholder="Reservation date" required />
+                        <label for="reservation-date">Reservation date:</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" placeholder="Reservation date" id="car-park-booking" checked />
+                        <label for="car-park-booking">Car park required?</label>
+                    </p>
+                    <p>
+                        <label for="ticket-type">What type of ticket would you like?</label>
+                        <br>
+                        <input type="radio" name="ticket-type" id="standard" value="standard" checked>
+                        <label for="standard">standard</label>
+                        <input type="radio" name="ticket-type" id="speed-lanes" value="speed-lanes">
+                        <label for="no-queues">no-queues</label>
+                    </p>
+                    <p>
+                        <label for="venus"></label>
+                        <select name="areas" id="venus" multiple>
+                            <option value="">--Areas you would like to visit--</option>
+                            <option value="racing-area" selected>Racing Area</option>
+                            <option value="water-park" selected>Water Park</option>
+                            <option value="roller-coaster" selected>Roller Coasters</option>
+
+                        </select>
+                    </p>
+                    <p>
+                        <label for="special-requests"></label>
+                        <textarea name="comments" placeholder="Are there any special requirements?"
+                            id="special-requests" cols="40" rows="1"></textarea>
+                    </p>
+                </section>
+                <section id="billing">
+                    <hr>
+                    <h3>Your Details</h3>
+
+                    <p>
+                        <label for="first-name"></label>
+                        <input type="text" placeholder="First Name" name="first-name" required />
+                    </p>
+                    <p>
+                        <label for=""></label>
+                        <input type="text" placeholder="Second Name" required />
+                    </p>
+                    <p>
+                        <label for=""></label>
+                        <input type="number" placeholder="Telephone Number" required />
+                    </p>
+                    <p>
+                        <label for="email"></label>
+                        <input type="email" placeholder="email address" required />
+                    </p>
+                    <p id="address">
+                        <hr>
+                        <h3>Your Address</h3>
+                        <br>
+                        <label for="Town"></label>
+                        <input type="text" placeholder="Town" name="Town" id="Town" required />
+                        <br>
+                        <label for="Street"></label>
+                        <input type="text" placeholder="Street" name="Street" id="Street" required>
+                        <br>
+                        <label for="Postcode"></label>
+                        <input type="text" placeholder="Postcode" name="Postcode" id="Postcode" required>
+                    </p>
+                    <hr>
+                    <p id="payment">
+                        <h3>Payment</h3>
+                        <label for="Card Number"></label>
+                        <input type="text" placeholder="Card Number" required />
+                        <br>
+                        <label for="valid-until"></label>
+                        <input type="text" placeholder="Valid Until" name="valid-until" id="valid-until" required />
+                        <label for="">/</label>
+                        <input type="text" placeholder="3 digit security code" required />
+
+
+                    </p>
+                    <p>
+                        <input type="checkbox" name="email-user" id="email-user">
+                        <label for="email-user">e-tickets</label>
+                    </p>
+                    <p>
+                        <button id="pay-button">Pay</button>
+                    </p>
+                    </form>
+                </section>
+            </div>
+
+            <!-- An aside element with additional infromation such as opening hours, ticket costs. -->
+            <aside id="additional-info-pane">
+                <div id="col-3-right-subcolumn1">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="2">
+                                    <h4>Opening hours: </h4>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Monday:</td>
+                                <td>closed</td>
+                            </tr>
+                            <tr>
+                                <td>Tuesday:</td>
+                                <td>8am - 7pm</td>
+                            </tr>
+                            <tr>
+                                <td>Wednesday:</td>
+                                <td>8am - 7pm</td>
+                            </tr>
+                            <tr>
+                                <td>Thursday:</td>
+                                <td>8am - 7pm</td>
+                            </tr>
+                            <tr>
+                                <td>Friday:</td>
+                                <td>8am - 9pm</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td>8am - 10pm</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday</td>
+                                <td>8am - 10pm</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div id="col-3-right-subcolumn2">
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>
+                                    <h4>Prices</h4>
+                                </th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Infants under 4:</td>
+                                <td>Free</td>
+                            </tr>
+                            <tr>
+                                <td>Children aged 4-11:</td>
+                                <td>£8</td>
+                            </tr>
+                            <tr>
+                                <td>Children aged 12-17:</td>
+                                <td>£10</td>
+                            </tr>
+                            <tr>
+                                <td>Adults:</td>
+                                <td>£12</td>
+                            </tr>
+                            <tr>
+                                <td>Senior visitors aged >60:</td>
+                                <td>£5</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+                </div>
+                <div id="col-3-right-subcolumn3">
+                    <ul>
+                        <h4>Under Maintenance: </h4>
+                        <li>The Edge Ride</li>
+                        <br>
+                        <li>The Dinsours tunnel</li>
+                    </ul>
+
+                </div>
+            </aside>
+        </section>
+
+        <!-- How to get here section -->
+        <section id="map">
+           
+                <h2 id="direction-header">How to get to us?</h2>
+          
+            <div id="map-background">
+                    <img id="map-image" src="assets/images/location3.jpg"
+                        alt="An image showing location of our Park. It is located close to Manaus. Follow the road to Novo Airao." width="900" height="650" usemap="#workmap">
+                        <map name="workmap">
+                            <area class="map1" shape="circle" coords="40,100,200" href="#map-address" alt="exact location of Jungle Land">
+                        </map>
+  
+ 
+                </div>
+        </section>
+
+
+        <footer>
+                <div>
+                        <h2 id="map-address">Our Address</h1>
+                        <address>1 Nossa Senhora Auxiliadora, Novo Airao, Brazil</address>
+                    </div>
+                    <div>
+                        <h2>Contact Us</h2>
+            <address id="contact">
+                <a href="mailto:jungleland@rock.com">jungleland@rock.com</a><br>
+                <a href="tel:+1111111111">(3211) 11234231</a>
+            </address>
+        </div>
+        </footer>
+
+
+    </main>
+</body>
+
+</html>
